@@ -3,7 +3,7 @@ require './lib/rubysl/xmlrpc/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "rubysl-xmlrpc"
-  spec.version       = RubySL::Xmlrpc::VERSION
+  spec.version       = RubySL::XMLRPC::VERSION
   spec.authors       = ["Brian Shirai"]
   spec.email         = ["brixen@gmail.com"]
   spec.description   = %q{Ruby standard library xmlrpc.}
