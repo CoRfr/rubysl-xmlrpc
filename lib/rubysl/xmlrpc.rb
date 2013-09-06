@@ -1,7 +1,2 @@
-require "rubysl-xmlrpc/version"
-
-module RubySL
-  module Xmlrpc
-    # Your code goes here...
-  end
-end
+require "rubysl/xmlrpc/xmlrpc"
+require "rubysl/xmlrpc/version"
