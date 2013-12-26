@@ -1,5 +1,5 @@
 module RubySL
-  module Xmlrpc
+  module XMLRPC
     VERSION = "0.0.1"
   end
 end
