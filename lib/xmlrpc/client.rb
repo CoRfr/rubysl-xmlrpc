@@ -116,6 +116,7 @@ module XMLRPC # :nodoc:
       @http.use_ssl = @use_ssl if @use_ssl
       @http.read_timeout = @timeout
       @http.open_timeout = @timeout
+      @http.verify_mode = OpenSSL::SSL::VERIFY_NONE
 
       @parser = nil
       @create = nil
@@ -460,6 +461,7 @@ module XMLRPC # :nodoc:
         # use a new HTTP object for each call
         http = net_http(@host, @port, @proxy_host, @proxy_port)
         http.use_ssl = @use_ssl if @use_ssl
+        http.verify_mode = OpenSSL::SSL::VERIFY_NONE
         http.read_timeout = @timeout
         http.open_timeout = @timeout
 
